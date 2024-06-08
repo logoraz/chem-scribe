@@ -1,2 +1,4 @@
-# chemixir
-chemixir (إكسير) - Extensible Chemical Formula Library Builder with Regulatory Intellisense.
+# chemixir (إكسير)
+
+A Highly Extensible Chemical Formulation Library Builder with Regulatory Intellisense.
+
