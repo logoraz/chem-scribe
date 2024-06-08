@@ -1,5 +1,4 @@
 # Main
-
 *.abcl
 *.fasl
 *.dx32fsl
@@ -10,10 +9,15 @@
 *~
 .#*
 
+
 # Source
-source/scratch.lisp
+
 
 # Assets
 assets/lem-sdl2-guix-example.png
+
+
+# Libraries
+libraries/scratch/scratch2.lisp
 
 # Tests
