@@ -78,6 +78,8 @@
 ;;   |--> ~/common-lisp/
 ;;   |--> ~/quicklisp/local-projects/
 ;;   |--> ~/.local/share/common-lisp/source/
+;;
+;; A library installed here is automatically available for every project.
 
 ;; Quicklisp Initialization
 ;; Load quicklisp - not sure why it isn't being loaded in ~/.sbclrc file...
