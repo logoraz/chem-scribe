@@ -1,0 +1,11 @@
+#+title: chemixir (إكسير)
+#+author: Erik Pablo Almaraz
+#+email: erikalmaraz@fastmail.com
+:args:
+#+language: en
+#+options: ':t toc:nil author:t email:t num:t
+#+startup: content indent
+#+macro: latest-export-date '(eval (format-time-string "%F %T %z"))'
+:end:
+
+A Highly Extensible Chemical Formulation Library Builder with Regulatory Intellisense.
