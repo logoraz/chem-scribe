@@ -1,4 +1,4 @@
-#+title: chemixir (إكسير)
+#+title: chem-scribe (الكتبة)
 #+author: Erik Pablo Almaraz
 #+email: erikalmaraz@fastmail.com
 :args:
