@@ -1,5 +1,5 @@
-#+title: chem-scribe (الكتبة)
-#+author: Erik Pablo Almaraz
+#+title: ChemScribe (الكتبة)
+#+author: Erik P. Almaraz (logoraz)
 #+email: erikalmaraz@fastmail.com
 :args:
 #+language: en
@@ -7,5 +7,7 @@
 #+startup: content indent
 #+macro: latest-export-date '(eval (format-time-string "%F %T %z"))'
 :end:
+
+* Introduction
 
 A Highly Extensible Chemical Formulation Library Builder with Regulatory Intellisense.
