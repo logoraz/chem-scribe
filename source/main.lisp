@@ -1,11 +1,6 @@
-(defpackage chemixir
+(defpackage chemscribe
   (:use :cl))
 
-(in-package :chemixir)
+(in-package :chemscribe)
 
-;; blah blah blah.
-
-
-;; This was created using cl-project, see below:
-;; (ql:quickload "cl-project")
-;; (cl-project:make-project #P"./path-to-project/root/")
+;; Howdy!

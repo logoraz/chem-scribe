@@ -1,9 +1,9 @@
-(defpackage chemixir/tests/main
+(defpackage chemscribe/tests/main
   (:use :cl
-        :chemixir
+        :chemscribe
         :rove))
 
-(in-package :chemixir/tests/main)
+(in-package :chemscribe/tests/main)
 
 ;; NOTE: To run this test file, execute `(asdf:test-system :chemixir)' in your Lisp.
 

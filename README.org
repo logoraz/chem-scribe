@@ -8,6 +8,6 @@
 #+macro: latest-export-date '(eval (format-time-string "%F %T %z"))'
 :end:
 
-* Introduction
+* Goal
 
-A Highly Extensible Chemical Formulation Library Builder with Regulatory Intellisense.
+A Highly Extensible Chemical Formula Builder with Regulatory Intellisense.
