@@ -8,31 +8,33 @@
 ;;;
 ;;;   guix shell -m path/to/chemscribe-manifest.scm -- sbcl
 ;;;
-;;;   or
+;;;   For development, it is perhaps best to run a pure shell, i.e.
 ;;;
-;;;   guix shell -m path/to/chemscribe-manifest.scm -- emacs
-;;;
+;;;   guix shell --pure -m /path/to/chemscribe-manifest.scm -- clasp-cl
+
 
 ;;; Reference:
 ;;; 1. https://guix.gnu.org/en/manual/devel/en/html_node/Writing-Manifests.html
+;;; 2.
+;;; 3.
+
 
 ;;; Code:
 
+
 (specifications->manifest
- '("sbcl"
-   ;; clasp-cl
+ '(;; "sbcl"
+   ;; "clasp-cl"
+   ;; General CL Packages/Modules
    "cl-bordeaux-threads"
    "cl-lparallel"
-   "cl-iolib"
-   "cl-nclasses"
-   "cl-parenscript"
-   "cl-ppcre"
-   "cl-str"
-   "cl-json"
-   ;; UIX & CL Bindings
-
+   "cl-slynk"
+   "cl-cairo2"
+   "cl-gtk4"
    ;; Unit Tests
-   "cl-lisp-unit2"))
-
-;; I can use clasp-cl, but would need to write a custom recipe, or use the
-;; recipe they supply, first running Koga to download dependencies...
+   "cl-lisp-unit2"
+   ;; UIX & CL Bindings - GTK4 (Gnome ToolKit)
+   "gtk"
+   "gobject-introspection"
+   "libadwaita"
+   "gtksourceview"))
