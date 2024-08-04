@@ -1,12 +1,16 @@
+;;;; chemscribe.asd
+
+#-asdf3.1 (error "ChemScribe requires ASDF 3.1.2")
+
 (defsystem "chemscribe"
   :version "0.0.1"
   :author "Erik P. Almaraz"
   :license "Apache 2.0"
-  :depends-on (#:asdf
-               #:bordeaux-threads
-               #:slynk
-               #:cl-glib
-               #:cl-gtk4)
+  :depends-on ("asdf"
+               "bordeaux-threads"
+               "slynk"
+               "cl-glib"
+               "cl-gtk4")
   :components ((:module "source"
                 :components ((:file "chemscribe"))))
   :description "Extensible Chemical Formula Builder with Regulatory Intellisense."
@@ -15,8 +19,8 @@
 (defsystem "chemscribe/tests"
   :author "Erik P. Almaraz"
   :license "Apache 2.0"
-  :depends-on (#:chemscribe
-               #:rove)
+  :depends-on ("chemscribe"
+               "rove")
   :components ((:module "tests"
                 :components ((:file "main"))))
   :description "Test system for chemscribe."

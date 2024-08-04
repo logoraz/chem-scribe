@@ -7,8 +7,8 @@
 ;;; Use `rest' --> `cdr'
 
 
-(defpackage chemscribe
-  (:use #:cl #:gtk4 #:slynk)
+(uiop:define-package :chemscribe
+  (:use :cl :gtk4 :slynk)
   (:export #:formula-builder))
 
 (in-package :chemscribe)
