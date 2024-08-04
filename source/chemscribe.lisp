@@ -88,7 +88,9 @@
     (unless (widget-visible-p window)
       (window-present window))))
 
-(sb-thread:make-thread (lambda () (create-server
-                                   :port 4008
-                                   :dont-close t)))
+;; (bt:make-thread
+;;  (lambda () (create-server :port 4008 :dont-close t)))
 
+;; sbcl specific
+;; (sb-thread:make-thread
+;;  (lambda () (create-server :port 4008 :dont-close t)))
