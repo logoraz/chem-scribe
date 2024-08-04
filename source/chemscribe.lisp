@@ -88,8 +88,9 @@
     (unless (widget-visible-p window)
       (window-present window))))
 
-;; (bt:make-thread
-;;  (lambda () (create-server :port 4008 :dont-close t)))
+;; Enable slynk to connect to emacs.
+(bt:make-thread
+ (lambda () (create-server :port 4008 :dont-close t)))
 
 ;; sbcl specific
 ;; (sb-thread:make-thread
