@@ -1,4 +1,4 @@
-;;;; ChemScribe Guix Manifest
+;;;; chemscribe-gtk4.lisp - ChemScribe GTK4 Guix Package Manifest
 
 ;;; Commentary:
 ;;;
