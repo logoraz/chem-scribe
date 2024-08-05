@@ -1,4 +1,4 @@
-;;;; chemscribe-gtk4.lisp - ChemScribe GTK4 Guix Package Manifest
+;;;; chemscribe-clog.lisp - ChemScribe CLOG Guix Package Manifest
 
 ;;; Commentary:
 ;;;
@@ -6,11 +6,11 @@
 ;;;
 ;;; GNU Guix development manifest.  To start the CL REPL:
 ;;;
-;;;   guix shell -m path/to/chemscribe-gtk4.scm -- sbcl
+;;;   guix shell -m path/to/chemscribe-clog.scm -- sbcl
 ;;;
 ;;;   For development, it is perhaps best to run a pure shell, i.e.
 ;;;
-;;;   guix shell --pure -m /path/to/chemscribe-gtk4.scm -- clasp-cl
+;;;   guix shell --pure -m /path/to/chemscribe-clog.scm -- clasp-cl
 
 
 ;;; Reference:
@@ -31,10 +31,7 @@
    "cl-slynk"
    ;; Unit Tests
    "cl-lisp-unit2"
-   ;; UIX & CL Bindings - GTK4 (Gnome ToolKit)
-   "cl-gtk4"
-   "cl-cairo2"
-   "gtk"
-   "gobject-introspection"
-   "libadwaita"
-   "gtksourceview"))
+   ;; UIX & CL Bindings - CLOG (Common Lisp Omnificient GUI)
+   "cl-clog"
+
+   ))
