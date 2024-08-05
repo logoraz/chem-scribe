@@ -29,7 +29,7 @@
    "cl-bordeaux-threads"
    "cl-lparallel"
    "cl-slynk"
-   ;; UIX & CL Bindings - CLOG (Common Lisp Omnificient GUI)
+   ;; UIX & CL Bindings - cl-electron (Common Lisp Bindings for Electron)
    ;; "cl-electron" --> not ready, still in early development!
    ;; Unit Tests
    "cl-lisp-unit2"))
