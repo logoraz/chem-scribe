@@ -1,4 +1,4 @@
-;;;; chemscribe-clog.lisp - ChemScribe CLOG Guix Package Manifest
+;;;; chemscribe-electron.lisp - ChemScribe Electron Guix Package Manifest
 
 ;;; Commentary:
 ;;;
@@ -6,11 +6,11 @@
 ;;;
 ;;; GNU Guix development manifest.  To start the CL REPL:
 ;;;
-;;;   guix shell -m path/to/chemscribe-clog.scm -- sbcl
+;;;   guix shell -m path/to/chemscribe-electron.scm -- sbcl
 ;;;
 ;;;   For development, it is perhaps best to run a pure shell, i.e.
 ;;;
-;;;   guix shell --pure -m /path/to/chemscribe-clog.scm -- clasp-cl
+;;;   guix shell --pure -m /path/to/chemscribe-electron.scm -- clasp-cl
 
 
 ;;; Reference:
@@ -29,9 +29,7 @@
    "cl-bordeaux-threads"
    "cl-lparallel"
    "cl-slynk"
-   ;; Unit Tests
-   "cl-lisp-unit2"
    ;; UIX & CL Bindings - CLOG (Common Lisp Omnificient GUI)
-   "cl-clog"
-
-   ))
+   ;; "cl-electron" --> not ready, still in early development!
+   ;; Unit Tests
+   "cl-lisp-unit2"))
