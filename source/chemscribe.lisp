@@ -5,10 +5,14 @@
 ;;; Coding Rules:
 ;;; Use `first' --> `car'
 ;;; Use `rest' --> `cdr'
+;;;
+;;; TOdO: 1. lookup how to properly :use packages with conflicting
+;;           namespaces...
 
 
 (uiop:define-package :chemscribe
-  (:use :cl :gtk4 :slynk)
+  (:use :cl :gtk4) ;; remove :gtk4 from :use!
+  (:import-from :slynk #:create-server)
   (:export #:formula-builder))
 
 (in-package :chemscribe)
@@ -62,14 +66,14 @@
     (let ((action (gio:make-simple-action :name "exit"
                                           :parameter-type nil)))
       (gio:action-map-add-action *application* action)
-      (connect action "activate"
+      (gtk4:connect action "activate"
                (lambda (action param)
                  (declare (ignore action param))
                  (gtk::destroy-all-windows-and-quit))))
     (let ((action (gio:make-simple-action :name "about"
                                           :parameter-type nil)))
       (gio:action-map-add-action *application* action)
-      (connect action "activate"
+      (gtk4:connect action "activate"
                (lambda (action param)
                  (declare (ignore action param))
                  (let ((dialog (menu-test-about-dialog)))
@@ -92,6 +96,4 @@
 (bt:make-thread
  (lambda () (create-server :port 4008 :dont-close t)))
 
-;; sbcl specific
-;; (sb-thread:make-thread
-;;  (lambda () (create-server :port 4008 :dont-close t)))
+;; (clsql:connect)

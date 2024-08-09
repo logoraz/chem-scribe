@@ -9,6 +9,8 @@
   :depends-on ("asdf"
                "bordeaux-threads"
                "slynk"
+               "clsql"
+               "md5"
                "cl-glib"
                "cl-gtk4")
   :components ((:module "source"
