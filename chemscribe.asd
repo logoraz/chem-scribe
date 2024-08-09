@@ -14,7 +14,8 @@
                "cl-glib"
                "cl-gtk4")
   :components ((:module "source"
-                :components ((:file "chemscribe"))))
+                :components ((:file "package")
+                             (:file "chemscribe-gtk4"))))
   :description "Extensible Chemical Formula Builder with Regulatory Intellisense."
   :in-order-to ((test-op (test-op "chemscribe/tests"))))
 
