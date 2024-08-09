@@ -29,6 +29,8 @@
    "cl-bordeaux-threads"
    "cl-lparallel"
    "cl-slynk"
+   "cl-clsql"
+   "cl-md5"
    ;; UIX & CL Bindings - cl-electron (Common Lisp Bindings for Electron)
    ;; "cl-electron" --> not ready, still in early development!
    ;; Unit Tests

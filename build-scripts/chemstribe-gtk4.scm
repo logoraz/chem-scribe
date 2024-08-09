@@ -29,6 +29,8 @@
    "cl-bordeaux-threads"
    "cl-lparallel"
    "cl-slynk"
+   "cl-clsql"
+   "cl-md5"
    ;; Unit Tests
    "cl-lisp-unit2"
    ;; UIX & CL Bindings - GTK4 (Gnome ToolKit)
