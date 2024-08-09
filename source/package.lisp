@@ -7,6 +7,6 @@
 
 
 (uiop:define-package :chemscribe
-  (:use :cl :gtk4) ;; remove :gtk4 from :use!
+  (:use :cl)
   (:import-from :slynk #:create-server)
   (:export #:formula-builder))
